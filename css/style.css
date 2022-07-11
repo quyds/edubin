@@ -140,6 +140,7 @@ header {
 	align-items: center;
 }
 .main-navigation a {
+    width: 110%;
     display: block;
     font-size: 15px;
     font-weight: 600;
@@ -164,6 +165,7 @@ header {
     border-top: 2px solid #FFC90E;
 }
 .main-navigation .sub-menu a {
+    text-align: start;
     padding: 14px 30px 14px 12px;
     text-transform: none;
     color: #838383;
@@ -188,7 +190,6 @@ header {
 
 }
 .site-branding {
-	width: 40%;
     padding: 1em 0;
     position: relative;
     z-index: 3;
@@ -196,6 +197,7 @@ header {
 .navigation-section .main-navigation {
     clear: both;
     width: auto;
+    margin-right: 20px;
 }
 .top-shopping-cart .cart {
     border-radius: 50%;
@@ -1079,7 +1081,10 @@ max-width: 480px  */
         
     }
     .navigation-section {
-        width: 40%;
+        width: 45%;
+    }
+    .site-branding {
+        width: 35%;
     }
     .menu-bar, .header-right-icon {
         color: #07294d;
@@ -1090,6 +1095,39 @@ max-width: 480px  */
     .edubin-slider-content {
         padding-right: 0px;
     }
+    .mobile-menu {
+        top: 65px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        display: none;
+        background: #fff;
+        padding: 25px;
+        border-bottom: 1px solid #e0e0e0;
+        max-height: 430px;
+        overflow-y: scroll;
+    }
+    .mobile-menu>ul li {
+        position: relative;
+        line-height: 50px;
+        border-top: 1px solid #d1d1d1;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile-menu>ul li i {
+        align-items: center;
+        display: flex;
+    }
+    .mobile-menu>ul li a {
+        color: #2b2a35;
+    }
+    .mobile-menu>ul li a:hover {
+        color: #FFC90E;
+        transition: 0.5s;
+    }
+
     /* .platform */
     .content-platform {
         background-color: #07294d;
@@ -1162,8 +1200,8 @@ max-width: 480px  */
     }
     /* main-book */
     .main-book-store .slick-arroww {
-        right: 71%;
-        top: 21%;
+        left: 0;
+        top: 230px;
         background-color: #FFC90E;
         font-size: 15px;
         font-weight: 600;
@@ -1198,11 +1236,15 @@ max-width: 480px  */
         
     }
     .navigation-section {
-        width: 55%;
+        width: 70%;
+        text-align: end;
     }
     /* menu-bar */
     .menu-bar, .header-right-icon {
         color: #07294d;
+    }
+    .site-branding {
+        width: 25%;
     }
     .slider-title {
         font-size: 60px;
@@ -1212,23 +1254,28 @@ max-width: 480px  */
     }
     /* .platform */
     .platform-right {
-        width: 70%;
-        margin-left: 50px;
-        padding-left: 85px;
+        width: 66%;
+        padding-left: 54px;
     }
     .platform-left {
-        width: 30%;
-        margin: 0 15px 0 0;
+        width: 34%;
+        margin-right: 5%;
     }
     .content-platform {
         background-color: #07294d;
         border-radius: 10px;
         border-style: solid;
         border-width: 0;
-        margin-top: -160px;
+        margin-top: -137.5px;
         margin-bottom: 0;
-        padding: 80px 90px 80px 72px;
         z-index: 1;
+    }
+    .content-platform-container {
+        width: 85%;
+        margin: auto;
+    }
+    .content-platform-row {
+        padding: 70px 0;
     }
     .platform-left-content-title {
         color: #fff;
@@ -1295,7 +1342,7 @@ max-width: 480px  */
         width: 100%;
     }
     .info-button-wrap .info-button {
-        padding: 15px 0px;
+        /* padding: 15px 0px; */
     }
     /* .main-feedback */
     .testimonial-cont {
@@ -1321,8 +1368,8 @@ max-width: 480px  */
     .book-slick-slide img {
         height: 280px;
         object-fit: contain;
-        padding: 35px 0;
-        margin: 0 35px;
+        padding: 20px 0;
+        margin: 0 20px;
     }
     .testimonial-thum .quote {
         position: absolute;

@@ -346,3 +346,14 @@ function validateElement(obj){
       obj_error.style.borderColor = 'green';
     }
 }
+
+// -------- menu mobile -----------
+
+function menuMobile() {
+  let menuMobi = document.querySelector('.mobile-menu');
+  if (menuMobi.style.display === "block") {
+    menuMobi.style.display = "none";
+  } else {
+    menuMobi.style.display = "block";
+  }
+}

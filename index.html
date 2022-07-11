@@ -65,7 +65,7 @@
             </div>
         </div>
         <nav class="navbar">
-            <div class="main-header">
+            <div class="main-header relative">
                 <div class="container">
                     <div class="header-menu">
                         <div class="header-area">
@@ -74,7 +74,7 @@
                                     <img src="./images/logo.png" width="180" />
                                 </a>
                             </div>
-                            <div class="navigation-section inline-block relative">
+                            <div class="navigation-section inline-block md:relative">
                                 <div class="main-navigation hidden md:inline-block">
                                     <ul class="flex justify-center">
                                         <li>
@@ -240,7 +240,41 @@
                                     </ul>
                                 </div>
                                 <div class="menu-bar flex justify-end md:hidden">
-                                    <i class="fa-solid fa-bars text-2xl"></i>
+                                    <button class="" type="button" onclick="menuMobile()">
+                                        <i class="fa-solid fa-bars text-2xl"></i>
+                                    </button>
+                                    <div class="mobile-menu">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <a href="">Home</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Courses</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Pages</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Events</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Blog</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Shop</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                            <li>
+                                                <a href="">Contact</a>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="header-right-icon inline-block">
@@ -559,8 +593,8 @@
                                     </div>
                                     <div class="stretched-content">
                                         <p>
-                                            Sollicitudirem sem quibibendum auci elit cons equat ipsutis sem 
-                                            nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis 
+                                            Sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis 
+                                            sed odio sit amet nibh vulputate cursus equat ipsutis gravida nibh vel velit auctor aliquetn. 
                                         </p>
                                     </div>
                                     <div class="info-button-wrap">
@@ -912,7 +946,7 @@
                                     All Products
                                 </button>
                                 <div class="book-slick-list">
-                                    <div class="book-slick-track grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-12" >
+                                    <div class="book-slick-track grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-10" >
                                         <div class="book-slick-slide">
                                             <div style="background-color: #fff;
                                                         border-radius: 3px;
